@@ -12,3 +12,6 @@
 */
 
 Route::get('/', ['as'=>'home','uses'=>'PageController@getIndex']);
+Route::get('/post-title', ['as'=>'post','uses'=>'PageController@getPostTitle']);
+Route::get('/about', ['as'=>'about','uses'=>'PageController@getAbout']);
+Route::get('/categories', ['as'=>'categories','uses'=>'PageController@getCategories']);
