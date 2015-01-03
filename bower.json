@@ -1,0 +1,23 @@
+{
+  "name": "LaravelPP",
+  "version": "0.0.1",
+  "authors": [
+    "Rijalul Fikri <fikri.desertlion@gmail.com>"
+  ],
+  "description": "Pondok Programmer Training Material",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "angular": "~1.3.8",
+    "ngFx": "~1.0.5",
+    "bootstrap-sass-official": "~3.3.1"
+  }
+}
