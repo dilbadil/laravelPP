@@ -12,3 +12,11 @@
 */
 
 Route::get('/', ['as'=>'home','uses'=>'PageController@getIndex']);
+Route::get('about', ['as'=>'about','uses'=>'PageController@getAbout']);
+Route::get('categories', ['as'=>'categories','uses'=>'PageController@getCategories']);
+Route::get('login', ['as'=>'login.get','uses'=>'UsersController@getLogin']);
+Route::post('login', ['as'=>'login.post','uses'=>'UsersController@postLogin']);
+Route::get('dashboard', function(){
+    return 'Ini Dashboard';
+});
+Route::resource('users','UsersController');
