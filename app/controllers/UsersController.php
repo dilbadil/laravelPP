@@ -92,16 +92,16 @@ class UsersController extends \BaseController {
 
     public function postLogin(){
         // Baca input
-        $input = Input::all();
+        $input = Input::except('_token');
 
         // Validasi Input User
         $v = Validator::make($input, User::$loginRule);
         if ( $v->fails() ) return Redirect::back()->withErrors($v);
 
         // Attempt Login
+        dd($input);
         if (!Auth::attempt($input))
             return Redirect::route('login.get');
-
         return Redirect::route('dashboard');
     }
 
