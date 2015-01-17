@@ -1,0 +1,30 @@
+form {
+    max-width: 500px;
+    margin: 30px auto;
+}
+form div {
+    padding: 5px;
+}
+form label {
+    display: block;
+    margin-bottom: 7px;
+}
+form input:not([type=submit]) {
+    width: 100%;
+    border: 1px solid #eee;
+    padding: 5px 7px;
+    transition: all 0.32s;
+}
+form input:not([type=submit]):focus {
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+}
+form input[type=submit] {
+    border: 1px solid #eee;
+    padding: 5px 17px;
+    text-align: center;
+    text-transform: uppercase;
+    background: #00796B;
+    border-bottom: 3px solid #004D40;
+    width:100%; 
+    color: #FFF;
+}
