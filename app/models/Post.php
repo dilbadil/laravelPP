@@ -1,5 +1,5 @@
 <?php
 
 class Post extends \Eloquent {
-	protected $fillable = [];
+	protected $fillable = ['title', 'body', 'author'];
 }

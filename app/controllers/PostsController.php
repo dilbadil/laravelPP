@@ -27,7 +27,11 @@ class PostsController extends \BaseController {
 	 */
 	public function create()
 	{
-        $this->layout->content = View::make('posts.create');
+        $post = new Post;
+        $data = [
+            'post' => $post,
+        ];
+        $this->layout->content = View::make('posts.create', $data);
 	}
 
 	/**
@@ -38,7 +42,12 @@ class PostsController extends \BaseController {
 	 */
 	public function store()
 	{
-		//
+		$input = Input::all();
+        $post = Post::create($input);
+		$data = [
+			'post' => $post,
+		];
+		$this->layout->content = View::make('posts.show', $data);
 	}
 
 	/**
