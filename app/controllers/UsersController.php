@@ -12,7 +12,8 @@ class UsersController extends \BaseController {
 	 */
 	public function index()
 	{
-		//
+        $user = User::all();
+        return Response::json($user, 200);
 	}
 
 	/**
@@ -92,7 +93,7 @@ class UsersController extends \BaseController {
 
     public function postLogin(){
         // Baca input
-        $input = Input::all();
+        $input = Input::only('email', 'password');
 
         // Validasi Input User
         $v = Validator::make($input, User::$loginRule);
