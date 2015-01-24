@@ -100,9 +100,8 @@ class UsersController extends \BaseController {
         if ( $v->fails() ) return Redirect::back()->withErrors($v);
 
         // Attempt Login
-        dd($input);
         if (!Auth::attempt($input))
-            return Redirect::route('login.get');
+            return Redirect::route('login.get')->withErrors(['Wrong username or password']);
         return Redirect::route('dashboard');
     }
 
