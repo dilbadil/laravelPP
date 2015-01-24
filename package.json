@@ -6,12 +6,25 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "PondokProgrammer",
+  "license": "MIT",
   "dependencies": {
     "gulp": "^3.8.10",
     "gulp-include": "^1.1.0",
     "gulp-ruby-sass": "^0.7.1",
     "gulp-uglify": "^1.0.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/desertlion/laravelPP.git"
+  },
+  "keywords": [
+    "laravel",
+    "angular"
+  ],
+  "bugs": {
+    "url": "https://github.com/desertlion/laravelPP/issues"
+  },
+  "homepage": "https://github.com/desertlion/laravelPP"
 }
