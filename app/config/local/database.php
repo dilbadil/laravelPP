@@ -23,9 +23,9 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'latihan',
+			'database'  => 'laravelPP',
 			'username'  => 'root',
-			'password'  => '',
+			'password'  => 'qweasd123',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

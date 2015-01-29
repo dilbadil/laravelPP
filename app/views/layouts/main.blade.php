@@ -8,7 +8,7 @@
             @show
         </title>
         @section('css')
-        <link rel="stylesheet" href="{{ asset('css/style.css') }}"/>
+        <link rel="stylesheet" href="<< asset('css/style.css') >>"/>
         @show
     </head>
     <body>
@@ -16,10 +16,10 @@
             <h1>MyJournal</h1>
             <nav>
                 <ul>
-                    <li><a href="{{ URL::route('home') }}">Home</a></li>
-                    <li><a href="{{ URL::route('about') }}">About</a></li>
-                    <li><a href="{{ URL::route('categories') }}">Categories</a></li>
-                    <li><a href="{{ URL::route('login.get') }}">Login</a></li>
+                    <li><a href="<< URL::route('home') >>">Home</a></li>
+                    <li><a href="<< URL::route('about') >>">About</a></li>
+                    <li><a href="<< URL::route('categories') >>">Categories</a></li>
+                    <li><a href="<< URL::route('login.get') >>">Login</a></li>
                 </ul>
             </nav>
         </header>
